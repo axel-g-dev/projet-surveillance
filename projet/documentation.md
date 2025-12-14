@@ -1,11 +1,9 @@
 # **Dossier de mini-projet**
 
----
-
 ## **Page de garde**
 
 * **Titre du projet :** Vidéo surveillance
-* **Nom(s) de(s) étudiant(s) :** L.D. A.G
+* **Noms des étudiants :** L.D. & A.G
 * **Classe :** CIEL2
 * **Année scolaire :** 2025-2026
 * **Enseignant référent :** M. Boudjelaba
@@ -13,55 +11,57 @@
 ---
 ## Sommaire
 
-- [Page de garde](#page-de-garde)
-
-- [1. Notice d'utilisation](#1-notice-dutilisation)
-  - [1.1. Objectif du produit ou de l'application](#11-objectif-du-produit-ou-de-lapplication)
-  - [1.2. Prérequis](#12-prérequis)
-  - [1.3. Procédure d'utilisation](#13-procédure-dutilisation)
-    - [Étape 1 : Montage du dossier partagé](#étape-1--montage-du-dossier-partagé)
-    - [Étape 2 : Préparation de l'environnement](#étape-2--préparation-de-lenvironnement)
-    - [Étape 3 : Test de connexion base de données](#étape-3--test-de-connexion-base-de-données)
-    - [Étape 4 : Démarrage du système](#étape-4--démarrage-du-système)
-    - [Étape 5 : Utilisation de l'interface](#étape-5--utilisation-de-linterface)
-    - [Étape 6 : Arrêt du système](#étape-6--arrêt-du-système)
-  - [1.4. Conseils et remarques](#14-conseils-et-remarques)
-
-- [2. Fiche(s) de recette](#2-fiches-de-recette)
-  - [Fiche recette n°1 : Test de détection de mouvement](#fiche-recette-n1--test-de-détection-de-mouvement)
-  - [Fiche recette n°2 : Test du délai anti-rafale](#fiche-recette-n2--test-du-délai-anti-rafale)
-  - [Fiche recette n°3 : Test de connexion base de données](#fiche-recette-n3--test-de-connexion-base-de-données)
-  - [Fiche recette n°4 : Test de sensibilité des paramètres](#fiche-recette-n4--test-de-sensibilité-des-paramètres)
-
-- [3. Rapport du projet](#3-rapport-du-projet)
-  - [3.1. Introduction](#31-introduction)
-  - [3.2. Cahier des charges / Expression du besoin](#32-cahier-des-charges--expression-du-besoin)
-  - [3.3. Analyse & Conception](#33-analyse--conception)
-    - [a) Diagramme de cas d'utilisation (SysML)](#a-diagramme-de-cas-dutilisation-sysml)
-    - [b) Diagramme de séquence (SysML)](#b-diagramme-de-séquence-sysml)
-    - [c) Diagramme de classe](#c-diagramme-de-classe)
-    - [d) Diagramme de Gantt](#d-diagramme-de-gantt)
-    - [e) Planning des séances](#e-planning-des-séances)
-    - [f) Fiche de suivi du projet](#f-fiche-de-suivi-du-projet)
-  - [3.4. Réalisation](#34-réalisation)
-    - [a) Description du travail effectué](#a-description-du-travail-effectué)
-    - [b) Schéma de câblage](#b-schéma-de-câblage)
-    - [c) Schéma réseau](#c-schéma-réseau)
-    - [d) Schéma BDD / MCD](#d-schéma-bdd--mcd)
-  - [3.5. Développement & Tests](#35-développement--tests)
-    - [a) Code développé](#a-code-développé)
-    - [b) Tests unitaires](#b-tests-unitaires)
-  - [3.6. Difficultés rencontrées](#36-difficultés-rencontrées)
-  - [3.7. Conclusion & perspectives](#37-conclusion--perspectives)
-
-- [4. Annexes](#4-annexes)
-  - [Annexe A : Structure du projet](#annexe-a--structure-du-projet)
-  - [Annexe B : Configuration système](#annexe-b--configuration-système)
-  - [Annexe C : Paramètres de détection](#annexe-c--paramètres-de-détection)
-  - [Annexe D : Format des fichiers générés](#annexe-d--format-des-fichiers-générés)
-  - [Annexe E : Lien vers le code source](#annexe-e--lien-vers-le-code-source)
-  - [Annexe F : Captures d'écran](#annexe-f--captures-décran)
-  - [Annexe G : Photos de la réalisation](#annexe-g--photos-de-la-réalisation)
+- [**Dossier de mini-projet**](#dossier-de-mini-projet)
+  - [**Page de garde**](#page-de-garde)
+  - [Sommaire](#sommaire)
+- [**1. Notice d'utilisation**](#1-notice-dutilisation)
+  - [**1.1. Objectif du produit ou de l'application**](#11-objectif-du-produit-ou-de-lapplication)
+  - [**1.2. Prérequis**](#12-prérequis)
+  - [**1.3. Procédure d'utilisation**](#13-procédure-dutilisation)
+    - [**Étape 1 : Montage du dossier partagé**](#étape-1--montage-du-dossier-partagé)
+    - [**Étape 2 : Préparation de l'environnement et installation des librairies**](#étape-2--préparation-de-lenvironnement-et-installation-des-librairies)
+    - [**Étape 3 : Test de connexion base de données**](#étape-3--test-de-connexion-base-de-données)
+    - [**Étape 4 : Démarrage du système**](#étape-4--démarrage-du-système)
+    - [**Étape 5 : Utilisation de l'interface**](#étape-5--utilisation-de-linterface)
+    - [**Étape 6 : Arrêt du système**](#étape-6--arrêt-du-système)
+  - [**1.4. Conseils et remarques**](#14-conseils-et-remarques)
+- [**2. Fiche(s) de recette**](#2-fiches-de-recette)
+  - [**Fiche recette n°1**](#fiche-recette-n1)
+    - [**Étapes du test**](#étapes-du-test)
+  - [**Fiche recette n°2**](#fiche-recette-n2)
+    - [**Étapes du test**](#étapes-du-test-1)
+  - [**Fiche recette n°3**](#fiche-recette-n3)
+    - [**Étapes du test**](#étapes-du-test-2)
+  - [**Fiche recette n°4**](#fiche-recette-n4)
+    - [**Étapes du test**](#étapes-du-test-3)
+- [**3. Rapport du projet**](#3-rapport-du-projet)
+  - [**3.1. Introduction**](#31-introduction)
+  - [**3.2. Cahier des charges**](#32-cahier-des-charges)
+  - [**3.3. Analyse \& Conception**](#33-analyse--conception)
+    - [**a) Diagramme de cas d'utilisation (SysML)**](#a-diagramme-de-cas-dutilisation-sysml)
+    - [**b) Diagramme de séquence (SysML)**](#b-diagramme-de-séquence-sysml)
+    - [**c) Diagramme de Classe**](#c-diagramme-de-classe)
+    - [**d) Diagramme de Gantt**](#d-diagramme-de-gantt)
+    - [**d) Planning des séances**](#d-planning-des-séances)
+    - [**e) Fiche de suivi du projet**](#e-fiche-de-suivi-du-projet)
+  - [**3.4. Réalisation**](#34-réalisation)
+    - [**a) Description du travail effectué**](#a-description-du-travail-effectué)
+    - [**b) Schéma réseau**](#b-schéma-réseau)
+    - [**b) Schéma de base de données**](#b-schéma-de-base-de-données)
+    - [**d) Compléments base de données**](#d-compléments-base-de-données)
+  - [**3.5. Développement \& Tests**](#35-développement--tests)
+    - [**a) Code développé (extraits pertinents)**](#a-code-développé-extraits-pertinents)
+    - [**b) Tests unitaires**](#b-tests-unitaires)
+  - [**3.6. Difficultés rencontrées**](#36-difficultés-rencontrées)
+  - [**3.7. Conclusion \& perspectives**](#37-conclusion--perspectives)
+- [**4. Annexes**](#4-annexes)
+  - [**Annexe A : Structure du projet**](#annexe-a--structure-du-projet)
+  - [**Annexe B : Configuration système**](#annexe-b--configuration-système)
+  - [**Annexe C : Paramètres de détection**](#annexe-c--paramètres-de-détection)
+  - [**Annexe D : Format des fichiers générés**](#annexe-d--format-des-fichiers-générés)
+  - [**Annexe E : Lien vers le code source**](#annexe-e--lien-vers-le-code-source)
+  - [**Annexe F : Captures d'écran**](#annexe-f--captures-décran)
+  - [**Annexe G : Photos de la réalisation**](#annexe-g--photos-de-la-réalisation)
 
 ---
 
@@ -74,35 +74,62 @@ Système de vidéosurveillance temps réel pour PC portable intégré dans une a
 **Contexte :** Mini-Projet 1 - Tâche 1 (Vidéosurveillance)
 
 **Fonctionnalités principales :**
-- Analyse du flux vidéo par différence de frames
-- Détection de mouvement par seuillage et contours
+- Analyse du flux vidéo par différence d'images
+- Détection de mouvement par seuil et contours
 - Capture automatique avec horodatage
 - Stockage sur dossier partagé SMB
-- Enregistrement des métadonnées en base MySQL distante
-- Interface de monitoring Streamlit
+- Enregistrement du chemin de stockage des images dans une base MySQL distante
+- Interface de monitoring Streamlit depuis un navigateur
 
 ## **1.2. Prérequis**
 
-**Matériel nécessaire :**
-- MacBook Pro avec webcam intégrée ou iPhone (Continuity Camera)
-- Raspberry Pi 5 (4 Go RAM, 32 Go stockage)
-- Connexion réseau entre Mac et Raspberry Pi (192.168.4.1)
+Pour faire fonctionner le système, l'environnement suivant est nécessaire :
 
-**Logiciels nécessaires :**
-- Python 3.13.5
-- macOS (backend AVFoundation pour OpenCV)
-- MySQL sur Raspberry Pi
+**Matériel :**
 
-**Librairies Python :**
-- streamlit : Framework web pour interface de monitoring (simple à mettre en place, rechargement à chaud, widgets natifs)
-- opencv-python : Vision par ordinateur (open source, support macOS natif, documentation exhaustive avec tutoriels)
-- numpy : Manipulation des matrices d'images (opérations vectorisées 100x plus rapides que Python natif)
-- mysql-connector-python : Connexion MySQL officielle (implémentation pure Python, requêtes paramétrées)
+  * **Ordinateur de surveillance :** MacBook (ou PC portable) avec Python installé
+  * **Dispositif de capture :** Webcam intégrée ou caméra externe (ex : iPhone via Continuity Camera)
+  * **Serveur central :** Raspberry Pi 5 (4 Go RAM, 32 Go stockage)
+  * **Réseau :** Connexion stable entre l'ordinateur et le Raspberry Pi (Adresse cible : `192.168.4.1`)
+
+**Logiciels et Environnement :**
+
+  * **Langage :** Python 3.13.5 ou supérieur
+  * **Éditeur de code :** VSCode (recommandé)
+  * **Base de données :** Serveur MySQL actif sur le Raspberry Pi
+  * **Système d'exploitation :** macOS (utilisé pour ce projet, backend AVFoundation) ou Windows/Linux
+
+**Librairies Python et installation :**
+
+Les bibliothèques suivantes sont requises pour le fonctionnement du script :
+
+  * `streamlit` : Interface web de monitoring et widgets de contrôle
+  * `opencv-python` : Capture vidéo, détection de mouvement et traitement d'image
+  * `numpy` : Manipulation optimisée des matrices (utilisé par OpenCV)
+  * `mysql-connector-python` : Connecteur officiel pour la communication avec la BDD
+
+**Commande d'installation :**
+Exécutez la commande suivante dans votre terminal (ou environnement virtuel) pour installer toutes les dépendances :
+
+```bash
+pip install streamlit opencv-python numpy mysql-connector-python
+```
 
 **Configurations particulières :**
-- Dossier partagé monté : `/Volumes/recordings`
-- Authentification : Utilisateur `axel` / Mot de passe `fi27^#COi5mlK##ZB3T4`
-- Base MySQL : `192.168.4.1:3306` / Base `presence` / User `presence`
+
+  * **Accès au dossier partagé (SMB)**
+
+      * **Chemin de montage local :** `/Volumes/recordings`
+      * **Utilisateur :** `axel`
+      * **Mot de passe :** `fi27^#COi5mlK##ZB3T4`
+
+  * **Connexion Base de données (MySQL)**
+
+      * **Serveur hôte :** `192.168.4.1` (Port 3306)
+      * **Nom de la base :** `presence`
+      * **Table cible :** `enregistrement`
+      * **Utilisateur SQL :** `presence`
+
 
 ## **1.3. Procédure d'utilisation**
 
@@ -128,12 +155,16 @@ ls -la /Volumes/recordings
 touch /Volumes/recordings/test.txt && rm /Volumes/recordings/test.txt
 ```
 
-### **Étape 2 : Préparation de l'environnement**
+### **Étape 2 : Préparation de l'environnement et installation des librairies**
 
 ```bash
 cd /Users/axel/Desktop/surveillance_camera/
 python3 -m venv venv
 source venv/bin/activate
+```
+**Ensuite veuillez installer les librairies suivantes, si vous ne l'avez pas déjà fait :**
+
+```bash
 pip install streamlit opencv-python numpy mysql-connector-python
 ```
 
@@ -152,8 +183,6 @@ SELECT * FROM enregistrement ORDER BY id_log DESC LIMIT 5;
 ### **Étape 4 : Démarrage du système**
 
 ```bash
-cd /Users/axel/Desktop/surveillance_camera/
-source venv/bin/activate
 streamlit run code.py
 ```
 
@@ -168,16 +197,15 @@ L'interface s'ouvre automatiquement dans le navigateur à l'adresse `http://loca
 - Cliquer sur "Ouvrir dossier" pour accéder aux captures
 
 **Zone principale :**
-- Flux vidéo en direct avec rectangles verts sur zones en mouvement
-- Badge vert "En cours" ou gris "Inactif" selon l'état
+- Flux vidéo en direct avec rectangles verts sur zones en mouvement 
 
 ### **Étape 6 : Arrêt du système**
 
 **Via interface :**
 - Clic sur "Arrêter" dans la sidebar
 
-**Via terminal :**
-- `Ctrl+C` dans le terminal
+**Puis dans le terminal :**
+- `Ctrl+C` 
 
 **Désactivation environnement :**
 ```bash
@@ -193,7 +221,7 @@ deactivate
 
 **Précautions d'utilisation :**
 - Vérifier que le dossier partagé est monté avant le démarrage
-- Vérifier la connexion réseau vers 192.168.4.1
+- Vérifier la connexion réseau vers `192.168.4.1`
 - Ne pas modifier les paramètres de détection sans comprendre leur impact
 
 **Recommandations :**
@@ -300,11 +328,11 @@ deactivate
 
 ## **3.1. Introduction**
 
-Dans le cadre du projet de vidéosurveillance (Mini-Projet 1 - Tâche 1), l'objectif est de développer un système complet de surveillance basé sur la détection de mouvement. Ce système s'inscrit dans une architecture distribuée où un PC portable équipé d'une webcam assure la détection et la capture, tandis qu'un serveur Raspberry Pi 5 centralise le stockage et la gestion des données.
+Dans le cadre du projet de vidéosurveillance (Mini-Projet 1 – Tâche 1), le but est de créer un système de surveillance basé sur la détection de mouvement. Un PC portable équipé d’une webcam s’occupe de détecter les mouvements et de prendre les images, tandis qu’un Raspberry Pi 5 sert de serveur pour stocker et gérer les données.
 
-La problématique principale consiste à concevoir un système capable de détecter automatiquement les mouvements, de capturer les images pertinentes, et de synchroniser les données avec un serveur distant tout en minimisant les faux positifs et en optimisant l'utilisation du stockage.
+Le principal défi est de détecter les mouvements de manière fiable, de capturer uniquement les images utiles et de les envoyer vers le serveur, tout en limitant les fausses alertes et l’espace de stockage utilisé.
 
-## **3.2. Cahier des charges / Expression du besoin**
+## **3.2. Cahier des charges**
 
 **Besoin principal :**
 Mettre en place un système de vidéosurveillance automatisé pour détecter et enregistrer les événements de mouvement dans une zone surveillée.
@@ -314,8 +342,8 @@ Mettre en place un système de vidéosurveillance automatisé pour détecter et 
 - Développement Python du programme de surveillance
 - Détection automatique de mouvement par analyse d'images
 - Capture automatique avec horodatage
-- Sauvegarde des données dans un dossier partagé
-- Enregistrement des métadonnées dans une base de données MySQL
+- Sauvegarde des photos dans un dossier partagé
+- Enregistrement du chemin de stockage des images dans une base MySQL
 - Interface de monitoring en temps réel
 - Documentation logicielle complète
 
@@ -324,7 +352,7 @@ Mettre en place un système de vidéosurveillance automatisé pour détecter et 
 - Système d'exploitation : macOS
 - Backend vidéo : AVFoundation (spécifique Mac)
 - Serveur : Raspberry Pi 5 (4 Go RAM, 32 Go stockage)
-- Base de données : MySQL sur Raspberry Pi (192.168.4.1)
+- Base de données : MySQL sur Raspberry Pi `192.168.4.1`
 - Stockage : Dossier partagé SMB avec authentification
 - Format images : JPEG avec nom horodaté
 
@@ -332,6 +360,7 @@ Mettre en place un système de vidéosurveillance automatisé pour détecter et 
 - MacBook Pro avec webcam intégrée (Index 1) ou iPhone via Continuity Camera (Index 0)
 - Connexion réseau stable entre Mac et Raspberry Pi
 - Espace disque suffisant pour le stockage des captures
+- Ne pas stocker le flux vidéo 
 
 ## **3.3. Analyse & Conception**
 
@@ -453,17 +482,15 @@ Le projet a été réalisé en plusieurs étapes successives :
 **2. Développement de la base de données :**
 - Création de la table `enregistrement` sur MySQL du Raspberry Pi
 - Structure : id_log, timestamp, type, file_path
-- Moteur InnoDB avec charset utf8mb4 pour la fiabilité transactionnelle
 
 **3. Développement de la classe DatabaseManager :**
-- Méthode `connect()` : Connexion TCP vers 192.168.4.1:3306 avec vérification d'état
+- Méthode `connect()` : Connexion TCP vers `192.168.4.1:3306` avec vérification d'état
 - Méthode `insert()` : Insertion paramétrée pour éviter l'injection SQL
 - Méthode `close()` : Fermeture propre de la connexion
 
 **4. Développement de la classe SurveillanceManager :**
 - Initialisation de la caméra avec buffer double frame (frame_a, frame_b)
-- Pipeline de prétraitement : conversion niveaux de gris + flou gaussien 11x11
-- Algorithme de détection : différence absolue, seuillage à 30, dilatation, extraction de contours
+- Algorithme de détection : différence absolue, seuillage à 30, & extraction de contours
 - Filtrage par surface minimale (1000 pixels)
 - Système de temporisation anti-rafale (5 secondes)
 - Annotation visuelle avec rectangles verts
@@ -479,45 +506,61 @@ Le projet a été réalisé en plusieurs étapes successives :
 - THRESHOLD_VALUE = 30 : Équilibre entre sensibilité et faux positifs
 - MIN_AREA = 1000 : Filtre les objets < 15 cm
 - BLUR_KERNEL = 11x11 : Suppression du bruit webcam
-- MIN_TIME_BETWEEN_PHOTOS = 5 : Évite la saturation du stockage
+- MIN_TIME_BETWEEN_PHOTOS = 5 : Évite la saturation du stockage, stocke une seulement photo toutes les 5 secondes s'il y a un mouvement
 
 **Choix techniques justifiés :**
 - **Streamlit** : Simple à mettre en place, rechargement à chaud, widgets natifs sans HTML/CSS
 - **OpenCV** : Open source, support macOS natif, documentation exhaustive avec tutoriels communautaires massifs
-- **Numpy** : Opérations vectorisées 100x plus rapides que boucles Python natives pour calculs pixel par pixel
-- **MySQL Connector** : Connecteur officiel, requêtes paramétrées, gestion automatique des timeouts
+- **Numpy** : Opérations vectorisées et plus simples
+- **MySQL Connector** : Cconnecteur officiel permettant l’accès à la base de données, avec prise en charge des requêtes paramétrées et une gestion automatique des délais d’attente (timeouts)
 
-### **b) Schéma de câblage**
 
-Non applicable (système logiciel uniquement).
+### **b) Schéma réseau**
 
-### **c) Schéma réseau**
+```mermaid
+flowchart LR
+    Mac[💻 MacBook <br/>192.168.4.X]
+    Cam[📷 Webcam interne<br/>Index 1]
+    Net[🌐 Wi-Fi]
+    Pi[🍓 Raspberry Pi 5<br/>192.168.4.1]
 
+    MySQL[(🗄️ MySQL Server<br/>Port 3306)]
+    DB[📂 Base : presence<br/>Table : enregistrement]
+
+    SMB[📁 Partage SMB<br/>Port 445]
+    Folder[🗃️ /var/www/recordings]
+    Mount[💾 Monté sur Mac<br/>/Volumes/recordings]
+    Auth[🔐 id : axel / 
+    password : fi27^#COi5mlK##ZB3T4]
+
+    Mac --> Cam
+    Mac --> Net --> Pi
+
+    Pi --> MySQL --> DB
+    Pi --> SMB --> Folder
+    Folder --> Mount
+    SMB --> Auth
 ```
-[MacBook Pro - 192.168.4.X]
-    |
-    |--- Webcam interne (Index 1)
-    |
-    |--- Connexion Ethernet/WiFi
-            |
-            v
-    [Raspberry Pi 5 - 192.168.4.1]
-            |
-            |--- MySQL Server (Port 3306)
-            |       |
-            |       v
-            |    Base : presence
-            |    Table : enregistrement
-            |
-            |--- Partage SMB (Port 445)
-                    |
-                    v
-                Dossier : /var/www/recordings
-                Monté sur Mac : /Volumes/recordings
-                Auth : axel / fi27^#COi5mlK##ZB3T4
+### **b) Schéma de base de données**
+
+```mermaid
+erDiagram
+    PRESENCE {
+        DATABASE presence
+    }
+
+    ENREGISTREMENT {
+        INT id_log PK
+        TIMESTAMP timestamp
+        VARCHAR type
+        VARCHAR file_path
+    }
+
+    PRESENCE ||--o{ ENREGISTREMENT : contains
 ```
 
-### **d) Schéma BDD / MCD**
+
+### **d) Compléments base de données**
 
 **Table : enregistrement**
 
@@ -740,9 +783,9 @@ surveillance_camera/
 **Raspberry Pi 5 :**
 - RAM : 4 Go
 - Stockage : 32 Go
-- IP : 192.168.4.1
-- Partage : SMB sur /var/www/recordings
-- MySQL : Port 3306, base presence
+- IP : `192.168.4.1`
+- Partage : SMB sur `/var/www/recordings`
+- MySQL : Port `3306`, base `presence` et table `enregistrement`
 
 ## **Annexe C : Paramètres de détection**
 
@@ -774,7 +817,7 @@ mouvement_20251213-152318.jpg
 
 ## **Annexe E : Lien vers le code source**
 
-Code source disponible sur : *(insérer lien Git)*
+* **Le code source est disponible sur GitHub : [lien du projet](https://github.com/axel-g-dev/Projet-surveillance)**
 
 ## **Annexe F : Captures d'écran**
 
@@ -783,3 +826,5 @@ Code source disponible sur : *(insérer lien Git)*
 ## **Annexe G : Photos de la réalisation**
 
 *(Insérer photos du setup : MacBook avec webcam, connexion Raspberry Pi, exemples de captures de mouvement)*
+doc.md
+Affichage de doc.md en cours...
