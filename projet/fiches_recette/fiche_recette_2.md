@@ -31,7 +31,7 @@
 |  3  | **Détection de mouvement**<br>Effectuer un mouvement devant la caméra.                                   | Des rectangles verts encadrent le mouvement. Le texte **"mouvement"** apparaît. La console affiche en temps réel : `Photo sauvegardée : .../mouvement_YYYYMMDD-HHMMSS.jpg`.                   |          | ☑ OK / ☐ KO |
 |  4  | **Test de saturation (Bug suspecté)**<br>Bouger continuellement pendant 3 secondes.                      | Le script tente de sauvegarder plusieurs images par seconde. **Vérifier dans le dossier :** Est-ce que toutes les images sont là, ou seulement une par seconde ? (Risque d'écrasement).       |          | ☑ OK / ☐ KO |
 |  5  | **Arrêt du programme**<br>Appuyer sur la touche **ESC**.                                                 | La fenêtre se ferme. Le script s'arrête proprement avec le message `Arrêt demandé` dans la console.                                                                                           |          | ☑ OK / ☐ KO |
-|  6  | **Vérification des fichiers**<br>Ouvrir le dossier de sauvegarde.                                        | Les fichiers `.jpg` sont lisibles. **Attention :** Vérifier si le nombre de fichiers correspond au nombre de logs "Photo sauvegardée" dans la console (Anomalie attendue).                    |          | \<ul\>\<li\>- [ ] OK\</li\>\<li\>- [x] KO\</li\>\</ul\> |
+|  6  | **Vérification des fichiers**<br>Ouvrir le dossier de sauvegarde.                                        | Les fichiers `.jpg` sont lisibles. **Attention :** Vérifier si le nombre de fichiers correspond au nombre de logs "Photo sauvegardée" dans la console (Anomalie attendue).                    |          | ☐ OK / ☑ KO |
 
 -----
 
