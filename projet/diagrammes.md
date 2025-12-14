@@ -1,4 +1,4 @@
-# DIAGRAMME DE CAS D’UTILISATION (SYSML)
+## a) Diagramme de cas d’utilisation (SysML)
 
 ```mermaid
 flowchart LR
@@ -18,7 +18,11 @@ flowchart LR
 
 ```
 
-# DIAGRAMME D’ACTIVITÉ (SYSML)
+---
+
+## b) Diagramme de séquence (SysML)
+
+**Type :** Diagramme de séquence – Détection et capture
 
 ```mermaid
 flowchart TD
@@ -46,7 +50,9 @@ flowchart TD
     O --> D
 ```
 
-# DIAGRAMME UML DE CLASSES (POO)
+---
+
+## c) Diagramme de classes
 
 ```mermaid
 classDiagram
@@ -73,4 +79,55 @@ classDiagram
 
     SurveillanceManager *-- DatabaseManager : utilise
 ```
+
+---
+
+## d) Schéma réseau
+
+```mermaid
+flowchart LR
+    Mac[💻 MacBook <br/>192.168.4.X]
+    Cam[📷 Webcam interne<br/>Index 1]
+    Net[🌐 Wi-Fi]
+    Pi[🍓 Raspberry Pi 5<br/>192.168.4.1]
+
+    MySQL[(🗄️ MySQL Server<br/>Port 3306)]
+    DB[📂 Base : presence<br/>Table : enregistrement]
+
+    SMB[📁 Partage SMB<br/>Port 445]
+    Folder[🗃️ /var/www/recordings]
+    Mount[💾 Monté sur Mac<br/>/Volumes/recordings]
+    Auth[🔐 id : axel / 
+    password : fi27^#COi5mlK##ZB3T4]
+
+    Mac --> Cam
+    Mac --> Net --> Pi
+
+    Pi --> MySQL --> DB
+    Pi --> SMB --> Folder
+    Folder --> Mount
+    SMB --> Auth
+```
+
+---
+
+## e) Schéma de base de données
+
+```mermaid
+erDiagram
+    PRESENCE {
+        DATABASE presence
+    }
+
+    ENREGISTREMENT {
+        INT id_log PK
+        TIMESTAMP timestamp
+        VARCHAR type
+        VARCHAR file_path
+    }
+
+    PRESENCE ||--o{ ENREGISTREMENT : contains
+```
+
+---
 
