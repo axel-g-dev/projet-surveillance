@@ -722,7 +722,7 @@ Mettre en place un système de vidéosurveillance automatisé pour détecter et 
 
 ### **a) Diagramme de cas d'utilisation (SysML)**
 
-![alt text](image.png)
+![Diagramme SysML de la partie surveillance](images/SysML.png)
 
 ### **b) Diagramme de séquence (SysML)**
 
