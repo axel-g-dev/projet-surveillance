@@ -13,7 +13,7 @@
   * Valider l’initialisation de la caméra
   * Vérifier le mécanisme Start / Pause via la touche Entrée
   * Contrôler la détection de mouvement et l’enregistrement vidéo
-* **Version / Build :** v1.0 – Premier jet
+* **Version / Build :** v1.0 
 * **Environnement :**
 
   * Système : macOS

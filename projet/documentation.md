@@ -25,15 +25,54 @@
     - [**Étape 5 : Utilisation de l'interface**](#étape-5--utilisation-de-linterface)
     - [**Étape 6 : Arrêt du système**](#étape-6--arrêt-du-système)
   - [**1.4. Conseils et remarques**](#14-conseils-et-remarques)
-- [**2. Fiche(s) de recette**](#2-fiches-de-recette)
-  - [**Fiche recette n°1**](#fiche-recette-n1)
-    - [**Étapes du test**](#étapes-du-test)
-  - [**Fiche recette n°2**](#fiche-recette-n2)
-    - [**Étapes du test**](#étapes-du-test-1)
-  - [**Fiche recette n°3**](#fiche-recette-n3)
-    - [**Étapes du test**](#étapes-du-test-2)
-  - [**Fiche recette n°4**](#fiche-recette-n4)
-    - [**Étapes du test**](#étapes-du-test-3)
+- [**2. Fiches de recette**](#2-fiches-de-recette)
+  - [**Fiche Recette n°1**](#fiche-recette-n1)
+    - [Informations générales](#informations-générales)
+    - [1. Protocole de test](#1-protocole-de-test)
+    - [2. Bilan de test](#2-bilan-de-test)
+      - [Évaluation qualitative](#évaluation-qualitative)
+      - [Décision finale](#décision-finale)
+    - [3. Remarques et anomalies](#3-remarques-et-anomalies)
+      - [Commentaires techniques](#commentaires-techniques)
+      - [Anomalies identifiées](#anomalies-identifiées)
+    - [4. Recommandations d’amélioration](#4-recommandations-damélioration)
+  - [**Fiche Recette n°2**](#fiche-recette-n2)
+    - [Informations générales](#informations-générales-1)
+    - [1. Protocole de test](#1-protocole-de-test-1)
+    - [2. Bilan de test](#2-bilan-de-test-1)
+      - [Évaluation qualitative](#évaluation-qualitative-1)
+      - [Décision finale](#décision-finale-1)
+    - [3. Remarques et anomalies](#3-remarques-et-anomalies-1)
+      - [Commentaires techniques](#commentaires-techniques-1)
+      - [Anomalies identifiées](#anomalies-identifiées-1)
+    - [4. Recommandations d’amélioration](#4-recommandations-damélioration-1)
+  - [**Fiche Recette n°3**](#fiche-recette-n3)
+    - [Informations générales](#informations-générales-2)
+    - [1. Protocole de test](#1-protocole-de-test-2)
+    - [2. Bilan de test](#2-bilan-de-test-2)
+      - [Évaluation qualitative](#évaluation-qualitative-2)
+      - [Décision finale](#décision-finale-2)
+    - [3. Remarques et anomalies](#3-remarques-et-anomalies-2)
+      - [Commentaires techniques](#commentaires-techniques-2)
+      - [Anomalies identifiées](#anomalies-identifiées-2)
+  - [**Fiche Recette n°4**](#fiche-recette-n4)
+    - [Informations générales](#informations-générales-3)
+    - [1. Protocole de test](#1-protocole-de-test-3)
+    - [2. Bilan de test](#2-bilan-de-test-3)
+      - [Évaluation qualitative](#évaluation-qualitative-3)
+      - [Décision finale](#décision-finale-3)
+    - [3. Remarques et anomalies](#3-remarques-et-anomalies-3)
+      - [Anomalies identifiées](#anomalies-identifiées-3)
+    - [4. Recommandations d’amélioration](#4-recommandations-damélioration-2)
+  - [**Fiche Recette n°5**](#fiche-recette-n5)
+    - [Informations générales](#informations-générales-4)
+    - [1. Protocole de test](#1-protocole-de-test-4)
+    - [2. Bilan de test](#2-bilan-de-test-4)
+      - [Évaluation qualitative](#évaluation-qualitative-4)
+      - [Décision finale](#décision-finale-4)
+    - [3. Remarques et anomalies](#3-remarques-et-anomalies-4)
+      - [Commentaires techniques](#commentaires-techniques-3)
+      - [Anomalies identifiées](#anomalies-identifiées-4)
 - [**3. Rapport du projet**](#3-rapport-du-projet)
   - [**3.1. Introduction**](#31-introduction)
   - [**3.2. Cahier des charges**](#32-cahier-des-charges)
@@ -236,93 +275,406 @@ deactivate
 
 ---
 
-# **2. Fiche(s) de recette**
+# **2. Fiches de recette**
 
-## **Fiche recette n°1**
+## **Fiche Recette n°1**
 
-* **Titre du test :** Test de détection de mouvement
-* **Objectif du test :** Vérifier que le système détecte correctement les mouvements et capture les images
-* **Préconditions :** 
-  - Caméra initialisée
-  - Dossier partagé monté
-  - Connexion MySQL active
-
-### **Étapes du test**
-
-1. Lancer le système avec "Démarrer"
-2. Passer la main devant la caméra
-3. Observer le rectangle vert autour de la zone en mouvement
-4. Attendre 5 secondes
-5. Vérifier la présence de l'image dans `/Volumes/recordings`
-6. Vérifier l'enregistrement dans la base MySQL
-
-* **Résultat attendu :** Image capturée avec nom `mouvement_YYYYMMDD-HHMMSS.jpg` et enregistrement en base avec type "mouvement"
-* **Résultat obtenu :** ………………………………………
-* **Validation :** OK / KO
-
-## **Fiche recette n°2**
-
-* **Titre du test :** Test du délai anti-rafale
-* **Objectif du test :** Vérifier que le système respecte le délai minimal de 5 secondes entre captures
-* **Préconditions :** 
-  - Système en cours d'exécution
-  - Au moins une capture déjà effectuée
-
-### **Étapes du test**
-
-1. Effectuer un mouvement pour déclencher une première capture
-2. Immédiatement après, effectuer un second mouvement
-3. Observer les statistiques : "Détections" augmente mais pas "Captures"
-4. Attendre 5 secondes
-5. Effectuer un troisième mouvement
-6. Vérifier que "Captures" augmente
-
-* **Résultat attendu :** Pas de sauvegarde pendant les 5 secondes suivant la première capture
-* **Résultat obtenu :** ………………………………………
-* **Validation :** OK / KO
-
-## **Fiche recette n°3**
-
-* **Titre du test :** Test de connexion base de données
-* **Objectif du test :** Vérifier l'enregistrement correct des métadonnées dans MySQL
-* **Préconditions :** 
-  - Serveur MySQL accessible sur 192.168.4.1
-  - Base `presence` créée avec table `enregistrement`
-
-### **Étapes du test**
-
-1. Déclencher une capture
-2. Se connecter à la base MySQL
-3. Exécuter : `SELECT * FROM enregistrement ORDER BY id_log DESC LIMIT 1;`
-4. Vérifier que le `file_path` correspond à l'image capturée
-5. Vérifier que le `type` est "mouvement"
-6. Vérifier que le `timestamp` correspond à l'heure de capture
-
-* **Résultat attendu :** Enregistrement présent avec toutes les informations correctes
-* **Résultat obtenu :** ………………………………………
-* **Validation :** OK / KO
-
-## **Fiche recette n°4**
-
-* **Titre du test :** Test de sensibilité des paramètres
-* **Objectif du test :** Vérifier que les paramètres THRESHOLD_VALUE et MIN_AREA filtrent correctement les faux positifs
-* **Préconditions :** 
-  - Système démarré dans un environnement stable
-
-### **Étapes du test**
-
-1. Observer le flux sans mouvement pendant 1 minute
-2. Vérifier qu'aucune détection ne se produit
-3. Déplacer un petit objet (< 15 cm)
-4. Vérifier qu'aucune détection ne se produit
-5. Passer devant la caméra
-6. Vérifier qu'une détection se produit
-
-* **Résultat attendu :** Aucun faux positif, détection correcte des mouvements humains
-* **Résultat obtenu :** ………………………………………
-* **Validation :** OK / KO
+**Script [test_camera.py](https://github.com/axel-g-dev/Projet-surveillance/blob/main/prog_de_test/test_camera.py)  
+(macOS / OpenCV)**
 
 ---
+
+### Informations générales
+
+* **Objet du test :** Script de surveillance par webcam avec détection de mouvement
+* **Objectif :**
+
+  * Valider l’initialisation de la caméra
+  * Vérifier le mécanisme Start / Pause via la touche Entrée
+  * Contrôler la détection de mouvement et l’enregistrement vidéo
+* **Version / Build :** v1.0 – Premier jet
+* **Environnement :**
+
+  * Système : macOS
+  * Bibliothèque : OpenCV (cv2)
+  * Driver caméra : `cv2.CAP_AVFOUNDATION`
+* **Référence du code :** Script Python audité (voir section Commentaires)
+
+---
+
+### 1. Protocole de test
+
+|  ID | Démarche | Comportement attendu | Résultat | Validation |
+| :-: | :------- | :------------------- | :------- | :---------: |
+|  1  | **Lancement du script**<br>Exécuter la commande `python test_camera.py` | La fenêtre **"Surveillance"** s’ouvre. Le flux vidéo est visible. Le message **"PAUSE - Appuyez sur ENTREE"** apparaît à l’écran. | | ☑ OK / ☐ KO |
+|  2  | **Activation de la surveillance**<br>Appuyer sur la touche **Entrée** | Le message de pause disparaît. La console affiche : `▶ Surveillance ACTIVE`. | | ☑ OK / ☐ KO |
+|  3  | **Détection de mouvement**<br>Effectuer un mouvement devant la caméra | Des rectangles verts encadrent les zones en mouvement. Le message **"MOUVEMENT DETECTE"** apparaît en rouge. | | ☑ OK / ☐ KO |
+|  4  | **Mise en pause**<br>Appuyer à nouveau sur **Entrée** | Le message **"PAUSE - Appuyez sur ENTREE"** réapparaît. La console affiche : `Surveillance EN PAUSE`. Aucun rectangle ne doit s’afficher malgré les mouvements. | | ☑ OK / ☐ KO |
+|  5  | **Arrêt du programme**<br>Appuyer sur **ESC** | La fenêtre vidéo se ferme correctement. Le script se termine sans erreur dans le terminal. | | ☑ OK / ☐ KO |
+|  6  | **Vérification de l’enregistrement**<br>Consulter le dossier du script | Le fichier **`surveillance.mp4`** est présent, lisible et correspond à la session enregistrée (vidéo accélérée due au framerate). | | ☑ OK / ☐ KO |
+
+---
+
+### 2. Bilan de test
+
+#### Évaluation qualitative
+
+| Critère | Conforme | Acceptable | Non conforme |
+| :------ | :------: | :--------: | :----------: |
+| Fonctionnalités | ☑ | ☐ | ☐ |
+| Conformité aux attentes | ☑ | ☐ | ☐ |
+| Ergonomie utilisateur | ☐ | ☑ | ☐ |
+| Stabilité globale | ☐ | ☑ | ☐ |
+
+#### Décision finale
+
+* ☐ **VALIDÉ** – Le script peut être utilisé tel quel
+* ☑ **REFUSÉ** – Des corrections sont nécessaires avant validation
+
+---
+
+### 3. Remarques et anomalies
+
+#### Commentaires techniques
+
+* L’image est inversée horizontalement (`cv2.flip(frame, 1)`) afin de corriger l’effet miroir sur macOS.
+
+#### Anomalies identifiées
+
+| Priorité | Description de l’anomalie | ID Issue |
+| :------: | :------------------------ | :------: |
+| Haute | Erreur possible lors de l’ouverture de la caméra si l’index est incorrect (0 vs 1) | |
+| Moyenne | Sensibilité de détection trop élevée ou trop faible selon l’éclairage ; ajuster `threshold_value` et `min_area`. | |
+
+---
+
+### 4. Recommandations d’amélioration
+
+* Centraliser les paramètres caméra (index, FPS, seuils) dans une section de configuration.
+* Ajouter un indicateur visuel de l’état (ACTIF / PAUSE) plus explicite à l’écran.
+* Enregistrer également la vidéo en mode pause (optionnel, selon le besoin).
+* Ajouter des logs horodatés pour faciliter le débogage.
+
+---
+
+**Test effectué par :** Louna, Axel  
+**Date :** 09 / 12 / 2025
+
+## **Fiche Recette n°2**
+
+**Script [code_photo.py](https://github.com/axel-g-dev/Projet-surveillance/blob/main/prog_de_test/code_photo.py)  
+(macOS / OpenCV)**
+
+---
+
+### Informations générales
+
+* **Objet du test :** Script de surveillance continue avec capture automatique de photos
+* **Objectif :**
+
+  * Valider la création automatique du dossier de sauvegarde
+  * Vérifier la détection de mouvement sans action utilisateur (démarrage immédiat)
+  * Contrôler la sauvegarde des fichiers images (.jpg)
+  * **Confirmer l'anomalie d'écrasement des fichiers (doublons de seconde)**
+* **Version / Build :** v2.0 – Surveillance Photo
+* **Environnement :**
+
+  * Système : macOS
+  * Bibliothèque : OpenCV (cv2)
+  * Driver caméra : `cv2.CAP_AVFOUNDATION`
+* **Référence du code :** Script Python d'enregistrement photo (voir section Commentaires)
+
+---
+
+### 1. Protocole de test
+
+|  ID | Démarche | Comportement attendu | Résultat | Validation |
+| :-: | :------- | :------------------- | :------- | :---------: |
+|  1  | **Vérification pré-lancement**<br>Vérifier que le dossier défini dans `SAVE_FOLDER` n'existe pas encore. | Le script doit avoir les droits d'écriture. | | ☑ OK / ☐ KO |
+|  2  | **Lancement du script**<br>Exécuter la commande `python surveillance_photos.py` | La fenêtre **"Surveillance"** s’ouvre immédiatement. Le flux vidéo est visible. La console affiche : `Camera initialisée avec succès`. Le dossier de sauvegarde est créé automatiquement. | | ☑ OK / ☐ KO |
+|  3  | **Détection de mouvement**<br>Effectuer un mouvement devant la caméra. | Des rectangles verts encadrent le mouvement. Le texte **"mouvement"** apparaît. La console affiche en temps réel : `Photo sauvegardée : .../mouvement_YYYYMMDD-HHMMSS.jpg`. | | ☑ OK / ☐ KO |
+|  4  | **Test de saturation (Bug suspecté)**<br>Bouger continuellement pendant 3 secondes. | Le script tente de sauvegarder plusieurs images par seconde. **Vérifier dans le dossier :** Est-ce que toutes les images sont là, ou seulement une par seconde ? (Risque d'écrasement). | | ☑ OK / ☐ KO |
+|  5  | **Arrêt du programme**<br>Appuyer sur la touche **ESC**. | La fenêtre se ferme. Le script s'arrête proprement avec le message `Arrêt demandé` dans la console. | | ☑ OK / ☐ KO |
+|  6  | **Vérification des fichiers**<br>Ouvrir le dossier de sauvegarde. | Les fichiers `.jpg` sont lisibles. **Attention :** Vérifier si le nombre de fichiers correspond au nombre de logs "Photo sauvegardée" dans la console (Anomalie attendue). | | ☐ OK / ☑ KO |
+
+---
+
+### 2. Bilan de test
+
+#### Évaluation qualitative
+
+| Critère | Conforme | Acceptable | Non conforme |
+| :------ | :------: | :--------: | :----------: |
+| Fonctionnalités | ☐ | ☑ | ☐ |
+| Conformité aux attentes | ☐ | ☐ | ☑ |
+| Ergonomie utilisateur | ☐ | ☐ | ☑ |
+| Stabilité globale | ☑ | ☐ | ☐ |
+
+#### Décision finale
+
+* ☐ **VALIDÉ** – Le script peut être utilisé tel quel
+* ☑ **REFUSÉ** – Des corrections sont nécessaires avant validation (Voir section 3)
+
+---
+
+### 3. Remarques et anomalies
+
+#### Commentaires techniques
+
+* **Absence d'interface :** Contrairement au premier script, celui-ci démarre la surveillance immédiatement sans attendre de confirmation (pas de mode "Pause").
+* **Chemin en dur :** La variable `SAVE_FOLDER = "/Users/axel/..."` empêchera le script de fonctionner sur un autre ordinateur sans modification manuelle du code, pas de renvoi vers la Base de Données.
+
+#### Anomalies identifiées
+
+| Priorité | Description de l’anomalie | ID Issue |
+| :------: | :------------------------ | :------: |
+| **Critique** | **Perte de données / Écrasement :** Le nommage des fichiers (`%H%M%S`) n'a qu'une précision à la seconde. Si le script capture 10 images dans la même seconde, seule la dernière est conservée (les 9 autres sont écrasées). | #01 |
+| Moyenne | **Absence de contrôle :** L'utilisateur ne peut pas mettre en pause la surveillance pour régler sa caméra sans remplir son disque dur de photos inutiles. | #02 |
+| Faible | **Portabilité :** Le chemin du dossier de sauvegarde est absolu et spécifique à un utilisateur. Utiliser un chemin relatif ou `os.path.expanduser("~")`. | #03 |
+
+---
+
+### 4. Recommandations d’amélioration
+
+* **Correction priorité 1 :** Ajouter un délai pour sauvegarder les photos et optimiser le stockage
+* **Interface :** Réintégrer la logique de "Start/Pause" avec la touche Entrée pour éviter de capturer l'utilisateur en train de s'installer.
+
+---
+
+**Test effectué par :** Louna et Axel  
+**Date :** 09 / 12 / 2025
+
+
+## **Fiche Recette n°3**
+
+**Script [page_web.py](https://github.com/axel-g-dev/Projet-surveillance/blob/main/prog_de_test/page_web.py)  
+(macOS / OpenCV)**
+
+---
+
+### Informations générales
+
+* **Objet du test :** Interface Web de Surveillance (POC Streamlit)
+* **Objectif :**
+  * Valider l'affichage de l'interface graphique dans le navigateur
+  * Tester les boutons interactifs (Démarrer / Arrêter)
+  * Comprendre le cycle d'exécution de Streamlit vs boucle infinie Python
+* **Version / Build :** v3.0 – Intégration Web (Streamlit)
+* **Environnement :**
+  * Système : macOS
+  * Bibliothèque : `streamlit`, `opencv-python`
+  * Driver caméra : `cv2.CAP_AVFOUNDATION`
+* **Référence du code / dépôt :** Script `page_web.py` appelant le module `code.py`
+
+---
+
+### 1. Protocole de test
+
+|  ID | Démarche | Comportement attendu | Résultat | Validation |
+| :-: | :------- | :------------------- | :------- | :---------: |
+|  1  | **Lancement du serveur Web**<br>Exécuter : `streamlit run page_web.py` | Le terminal affiche une URL (ex: `http://localhost:8501`). Une page web s'ouvre automatiquement dans le navigateur. | | ☑ OK / ☐ KO |
+|  2  | **Vérification de l'interface**<br>Observer la page web chargée. | Le titre **"Surveillance vidéo"** est visible. Deux boutons **"Démarrer"** et **"Arrêter"** sont présents. | | ☑ OK / ☐ KO |
+|  3  | **Action Démarrer**<br>Cliquer sur le bouton "Démarrer". | La variable `run` passe à `True`. La caméra s'initialise (la LED verte du Mac s'allume). | | ☑ OK / ☐ KO |
+|  4  | **Vérification du flux vidéo**<br>Observer l'espace sous les boutons. | **Comportement actuel connu :** Une image s'affiche mais reste figée ou ne se rafraîchit pas en temps réel. Le flux n'est pas fluide. | | ☐ OK / ☑ KO |
+|  5  | **Action Arrêter**<br>Cliquer sur le bouton "Arrêter". | La variable `run` passe à `False`. La tentative de lecture s'arrête. | | ☑ OK / ☐ KO |
+|  6  | **Gestion des erreurs**<br>Vérifier le terminal pendant l'exécution. | Pas de "Traceback" ou d'erreur critique faisant crasher le serveur Streamlit. | | ☑ OK / ☐ KO |
+
+---
+
+### 2. Bilan de test
+
+#### Évaluation qualitative
+
+| Critère | Conforme | Acceptable | Non conforme |
+| :------ | :------: | :--------: | :----------: |
+| Fonctionnalités | ☐ | ☐ | ☑ |
+| Conformité aux attentes | ☐ | ☑ | ☐ |
+| Ergonomie utilisateur | ☑ | ☐ | ☐ |
+| Stabilité globale | ☐ | ☑ | ☐ |
+
+> *Note : "Conformité aux attentes" est noté Acceptable car l'objectif était pédagogique (comprendre Streamlit) et non fonctionnel (avoir une vidéo fluide).*
+
+#### Décision finale
+
+* ☐ **VALIDÉ**
+* ☑ **REFUSÉ** (Le script nécessite une refonte de la boucle pour fonctionner avec Streamlit)
+
+---
+
+### 3. Remarques et anomalies
+
+#### Commentaires techniques
+
+> Streamlit exécute le script de haut en bas à chaque interaction. Une boucle `while True` classique à l'intérieur d'un script Streamlit bloque souvent le rafraîchissement de l'interface (les boutons deviennent inactifs) ou ne rafraîchit l'image qu'une seule fois.
+
+#### Anomalies identifiées
+
+| Priorité | Description de l’anomalie | ID Issue |
+| :------: | :------------------------ | :------: |
+| **Haute** | **Absence de rafraîchissement vidéo :** Le script affiche une image unique ou fige le navigateur car il manque une commande de rechargement (`st.rerun()`) ou une boucle gérée spécifiquement pour le web. | 01 |
+
+---
+
+**Test effectué par :** Louna et Axel  
+**Date :** 09 / 12 / 2025
+
+## **Fiche Recette n°4**
+
+**Script [code_sans_bdd.py](https://github.com/axel-g-dev/Projet-surveillance/blob/main/prog_de_test/code_sans_bdd.py)  
+(macOS / OpenCV)**
+
+---
+
+### Informations générales
+
+* **Objet du test :** Application de surveillance par webcam avec détection de mouvement et capture d’images
+* **Objectif :**
+  * Valider l’initialisation de la caméra via Streamlit
+  * Vérifier le contrôle **Démarrer / Arrêter**
+  * Contrôler la détection de mouvement en temps réel
+  * Vérifier la sauvegarde automatique d’images lors d’un mouvement
+  * Vérifier l’affichage des statistiques
+* **Version / Build :** **v4.0 – Version Streamlit modulaire**
+* **Environnement :**
+  * Système : macOS
+  * Bibliothèques : OpenCV (cv2), Streamlit, NumPy
+  * Driver caméra : `cv2.CAP_AVFOUNDATION`
+* **Référence du code :** Script Python audité (SurveillanceManager + interface Streamlit)
+
+---
+
+### 1. Protocole de test
+
+|  ID | Démarche | Comportement attendu | Résultat | Validation |
+| :-: | :------- | :------------------- | :------- | :---------: |
+|  1  | **Lancement de l’application**<br>Commande : `streamlit run surveillance_streamlit.py` | L’interface Streamlit s’ouvre dans le navigateur. L’état est **Inactif**. Le message *“Cliquez sur Démarrer pour lancer la surveillance”* apparaît. | | ☑ OK / ☐ KO |
+|  2  | **Démarrage de la surveillance**<br>Clique sur **Démarrer** | La caméra s’initialise. Le statut passe à **En cours**. Le flux vidéo apparaît. La console affiche les logs `[CAMERA] OK`. | | ☑ OK / ☐ KO |
+|  3  | **Détection de mouvement**<br>Effectuer un mouvement devant la caméra | Des rectangles verts entourent les zones en mouvement. Un point vert apparaît en haut à gauche de l’image. Le compteur **Détections** augmente. | | ☑ OK / ☐ KO |
+|  4  | **Capture automatique**<br>Maintenir un mouvement | Une image est sauvegardée toutes les X secondes (selon `MIN_TIME_BETWEEN_PHOTOS`). Le compteur **Captures** augmente. | | ☑ OK / ☐ KO |
+|  5  | **Arrêt de la surveillance**<br>Clique sur **Arrêter** | Le flux vidéo s’arrête. Le statut passe à **Inactif**. Les statistiques restent affichées. | | ☑ OK / ☐ KO |
+|  6  | **Vérification des fichiers**<br>Ouvrir le dossier de sauvegarde | Les fichiers `mouvement_YYYYMMDD-HHMMSS.jpg` sont présents et lisibles. Les images correspondent aux mouvements détectés. | | ☑ OK / ☐ KO |
+
+---
+
+### 2. Bilan de test
+
+#### Évaluation qualitative
+
+| Critère | Conforme | Acceptable | Non conforme |
+| :------ | :------: | :--------: | :----------: |
+| Fonctionnalités | ☑ | ☐ | ☐ |
+| Conformité aux attentes | ☑ | ☐ | ☐ |
+| Ergonomie utilisateur | ☑ | ☐ | ☐ |
+| Stabilité globale | ☐ | ☑ | ☐ |
+
+#### Décision finale
+
+* ☐ **VALIDÉ** – Le script peut être utilisé tel quel
+* ☑ **REFUSÉ** – Il n'y a pas de lien, ni d'envoi à la BDD
+
+---
+
+### 3. Remarques et anomalies
+
+#### Anomalies identifiées
+
+| Priorité | Description de l’anomalie | ID Issue |
+| :------: | :------------------------ | :------: |
+| Haute | Envoi impossible à la base de données pour l'envoi de données (métadonnées) | 01 |
+
+---
+
+### 4. Recommandations d’amélioration
+
+> Faire un lien avec la base de données 
+
+---
+
+**Test effectué par :** Louna, Axel  
+**Date :** 09 / 12 / 2025
+
+
+## **Fiche Recette n°5**
+
+**Script [code.py](https://github.com/axel-g-dev/Projet-surveillance/blob/main/code.py)  
+(macOS / OpenCV / Streamlit / MySQL)**
+
+---
+
+### Informations générales
+
+* **Objet du test :** Interface Web de Surveillance Vidéo avec détection de mouvement
+* **Objectif :**
+  * Valider l’affichage de l’interface graphique Streamlit dans un navigateur
+  * Tester les boutons interactifs (Démarrer / Arrêter)
+  * Vérifier la détection de mouvement par OpenCV
+  * Valider l’enregistrement des captures et des événements en base de données
+  * Vérifier la limitation volontaire des captures pour réduire la charge système
+* **Version / Build :** v5.0 – Version finale
+* **Environnement :**
+  * Système : macOS (tests) / Raspberry Pi (cible)
+  * Bibliothèques : `streamlit`, `opencv-python`, `numpy`, `mysql-connector-python`
+  * Caméra : USB / intégrée via `cv2.VideoCapture`
+* **Référence du code / dépôt :** Script unique `code.py`
+
+---
+
+### 1. Protocole de test
+
+|  ID | Démarche | Comportement attendu | Résultat | Validation |
+| :-: | :------- | :------------------- | :------- | :---------: |
+|  1  | **Lancement du serveur Web**<br>Exécuter : `streamlit run code.py` | Le terminal affiche une URL locale (ex : `http://localhost:8501`) et la page s’ouvre dans le navigateur. | La page Streamlit se lance correctement. | ☑ OK |
+|  2  | **Vérification de l’interface**<br>Observer la page web chargée. | Le titre de l’application est visible. La sidebar affiche les boutons **Démarrer** et **Arrêter** ainsi que les statistiques. | Interface conforme, lisible et stable. | ☑ OK |
+|  3  | **Action Démarrer**<br>Cliquer sur le bouton "Démarrer". | La caméra s’initialise, le statut passe à **En cours** et le flux vidéo démarre. | Caméra activée, flux vidéo visible. | ☑ OK |
+|  4  | **Vérification du flux vidéo**<br>Observer l’image affichée. | Le flux vidéo se rafraîchit de manière continue dans l’interface. | Flux fluide et mis à jour en temps réel. | ☑ OK |
+|  5  | **Détection de mouvement**<br>Provoquer un déplacement devant la caméra. | Les zones de mouvement sont détectées et encadrées. | Détection cohérente, sans faux positifs excessifs. | ☑ OK |
+|  6  | **Capture automatique**<br>Maintenir un mouvement devant la caméra. | Une image est enregistrée uniquement si un mouvement est détecté, avec un intervalle minimum de 5 secondes entre deux captures. | Captures espacées, limitation respectée. | ☑ OK |
+|  7  | **Enregistrement en base de données**<br>Consulter la base MySQL après une détection. | Une entrée est ajoutée dans la table avec le type d’événement et le chemin du fichier image. | Insertion confirmée sans erreur. | ☑ OK |
+|  8  | **Statistiques temps réel**<br>Observer les compteurs. | Les compteurs de détections, de captures et la durée s’actualisent en temps réel. | Statistiques correctes et cohérentes. | ☑ OK |
+|  9  | **Action Arrêter**<br>Cliquer sur le bouton "Arrêter". | Le flux vidéo s’arrête et la caméra est libérée. | Arrêt propre sans crash. | ☑ OK |
+| 10  | **Gestion des erreurs**<br>Observer le terminal pendant l’exécution. | Aucune erreur critique ou traceback bloquant. | Aucune anomalie détectée. | ☑ OK |
+
+---
+
+### 2. Bilan de test
+
+#### Évaluation qualitative
+
+| Critère                     | Conforme | Acceptable | Non conforme |
+| :-------------------------- | :------: | :--------: | :----------: |
+| Fonctionnalités             | ☑ | ☐ | ☐ |
+| Conformité aux attentes     | ☑ | ☐ | ☐ |
+| Ergonomie utilisateur       | ☑ | ☐ | ☐ |
+| Stabilité globale           | ☑ | ☐ | ☐ |
+| Intégration base de données | ☑ | ☐ | ☐ |
+| Performance système         | ☑ | ☐ | ☐ |
+
+#### Décision finale
+
+* ☑ **VALIDÉ**
+* ☐ **REFUSÉ**
+
+---
+
+### 3. Remarques et anomalies
+
+#### Commentaires techniques
+
+> La version v5.0 respecte le cycle d’exécution de Streamlit grâce à l’utilisation de `st.session_state` et de zones dynamiques (`st.empty()`).
+> La détection de mouvement est réalisée via OpenCV et les captures sont volontairement limitées à une image toutes les 5 secondes afin d’éviter une surcharge CPU, disque et base de données, notamment sur Raspberry Pi.
+> Le lien avec la base de données MySQL est opérationnel : chaque capture génère une entrée persistante avec le type d’événement et le chemin du fichier.
+
+#### Anomalies identifiées
+
+| Priorité | Description de l’anomalie | ID Issue |
+| :------: | :------------------------ | :------: |
+| Basse | Aucune anomalie bloquante constatée lors des tests. | 00 |
+
+---
+
+**Test effectué par :** Louna et Axel  
+**Date :** 12 / 12 / 2025
+
 
 # **3. Rapport du projet**
 
