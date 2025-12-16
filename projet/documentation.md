@@ -100,7 +100,11 @@
   - [**Annexe D : Format des fichiers générés**](#annexe-d--format-des-fichiers-générés)
   - [**Annexe E : Lien vers le code source**](#annexe-e--lien-vers-le-code-source)
   - [**Annexe F : Captures d'écran**](#annexe-f--captures-décran)
-  - [**Annexe G : Photos de la réalisation**](#annexe-g--photos-de-la-réalisation)
+    - [**La connexion au serveur :**](#la-connexion-au-serveur-)
+    - [**Présentation de la page web sans avoir lancé la vidéo surveillance :**](#présentation-de-la-page-web-sans-avoir-lancé-la-vidéo-surveillance-)
+    - [**Détection via les carrés vert d'un mouvement et affichage sur la page Web :**](#détection-via-les-carrés-vert-dun-mouvement-et-affichage-sur-la-page-web-)
+    - [**Capture d'écran du dossier 'recordings' partagé sur lequel le MacBook envoi les photos :**](#capture-décran-du-dossier-recordings-partagé-sur-lequel-le-macbook-envoi-les-photos-)
+    - [**Enregistrement des métadonnées des photos prises par le système de surveillance dans la base de données :**\*](#enregistrement-des-métadonnées-des-photos-prises-par-le-système-de-surveillance-dans-la-base-de-données-)
 
 ---
 
@@ -917,7 +921,7 @@ CREATE TABLE enregistrement (
 id_log: 1452
 timestamp: 2025-12-02 14:32:04
 type: mouvement
-file_path: /Volumes/recordings/mouvement_20251202-143204.jpg
+file_path: /Volumes/recordings/mvt_20251202-143204.jpg
 ```
 
 **Particularités :**
@@ -1106,7 +1110,7 @@ surveillance_camera/
 ├── venv/                   # Environnement virtuel
 ├── README.md               # Documentation
 └── /Volumes/recordings/    # Dossier partagé (montage SMB)
-    └── mouvement_*.jpg     # Images capturées
+    └── mvt_*.jpg     # Images capturées
 ```
 
 ## **Annexe B : Configuration système**
@@ -1137,13 +1141,13 @@ surveillance_camera/
 
 **Nom de fichier :**
 ```
-mouvement_YYYYMMDD-HHMMSS.jpg
+mvt_YYYYMMDD-HHMMSS.jpg
 ```
 
 **Exemples :**
 ```
-mouvement_20251213-093042.jpg
-mouvement_20251213-152318.jpg
+mvt_20251213-093042.jpg
+mvt_20251213-152318.jpg
 ```
 
 **Propriétés JPEG :**
@@ -1157,10 +1161,17 @@ mouvement_20251213-152318.jpg
 
 ## **Annexe F : Captures d'écran**
 
-*(Insérer captures d'écran de l'interface Streamlit : vue démarrage, vue en cours de surveillance, vue des statistiques)*
+### **La connexion au serveur :**
+> ![Connexion au serveur](images/smb.png)
 
-## **Annexe G : Photos de la réalisation**
+### **Présentation de la page web sans avoir lancé la vidéo surveillance :** 
+> ![Page Web sans surveillance](images/page_web.png)
 
-*(Insérer photos du setup : MacBook avec webcam, connexion Raspberry Pi, exemples de captures de mouvement)*
-doc.md
-Affichage de doc.md en cours...
+### **Détection via les carrés vert d'un mouvement et affichage sur la page Web :** 
+> ![Détection d'un mouvement](images/detection_page_web.png)
+
+### **Capture d'écran du dossier 'recordings' partagé sur lequel le MacBook envoi les photos :**
+> ![Capture d'écran du dossier partagé](images/dossier_recordings_partagé.png)
+
+### **Enregistrement des métadonnées des photos prises par le système de surveillance dans la base de données :***
+> ![Capture d'écran de la Base de donnée](images/bdd.png)
