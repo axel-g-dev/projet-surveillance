@@ -65,10 +65,10 @@
 | Priorité | Description de l’anomalie | ID Issue |
 | :------: | :------------------------ | :------: |
 | **Haute**| **Absence de rafraîchissement vidéo :** Le script affiche une image unique ou fige le navigateur car il manque une commande de rechargement (`st.rerun()`) ou une boucle gérée spécifiquement pour le web. | 01 |
-| Moyenne  | **Persistance de la caméra :** Si on recharge la page, la caméra peut rester "occupée" par l'instance précédente si elle n'est pas libérée correctement. | 02 |
+
 
 -----
 
 **Test effectué par :** Louna et Axel
 
-**Date :** 202\_ / \_\_ / \_\_
+**Date :** 09 / 12 / 2025
