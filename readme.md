@@ -41,26 +41,50 @@ Projet réalisé dans le cadre du Mini-Projet CIEL2 – Année scolaire 2025–2
 
 ```txt
 SURVEILLANCE_CAMERA/
-├── code.py                 # Script principal (version finale)
-├── prog_de_test/           # Scripts intermédiaires et prototypes
-│   ├── test_camera.py      # Test basique de la caméra
-│   ├── code_photo.py       # Capture automatique de photos
-│   ├── code_sans_bdd.py    # Version Streamlit sans base de données
-│   └── page_web.py         # Preuve de concept Streamlit
+├── __pycache__/
+│   └── code.cpython-313.pyc
+│
+├── .venv/                  # Environnement virtuel Python
+├── venv/                   # (ancien environnement, non utilisé)
 │
 ├── bdd_sql/
-│   └── bdd.sql             # Script SQL de création de la base
+│   └── bdd.sql              # Script SQL de création de la base
 │
-├── projet/
-│   ├── documentation.md    # Documentation complète du projet
-│   ├── diagrammes.md       # Diagrammes (SysML, séquence, classe)
-│   ├── fiches_recette/     # Fiches de tests et validations
-│   └── images/             # Captures d’écran et schémas
+├── env/                     # Variables d’environnement (si utilisées)
 │
-├── a_faire.md              # Liste des tâches restantes
-├── a_rendre.md             # Éléments à rendre
+├── prog_de_test/            # Scripts de tests et prototypes
+│   ├── older_codes/         # Anciennes versions / essais
+│   ├── code_photo.py        # Capture automatique de photos
+│   ├── code_sans_bdd.py     # Version Streamlit sans base de données
+│   ├── page_web.py          # Prototype interface web Streamlit
+│   └── test_camera.py       # Test basique de la caméra
+│
+├── projet/                  # Documentation du mini-projet
+│   ├── fiches_recette/      # Fiches de tests et validations
+│   │   ├── fiche_recette_1.md
+│   │   ├── fiche_recette_2.md
+│   │   ├── fiche_recette_3.md
+│   │   ├── fiche_recette_4.md
+│   │   ├── fiche_recette_5.md
+│   │   └── fiche_recette_modele.md
+│   │
+│   ├── images/              # Schémas et captures d’écran
+│   │   ├── bdd.png
+│   │   ├── detection_page_web.png
+│   │   ├── dossier_recordings_partage.png
+│   │   ├── page_web.png
+│   │   ├── smb.png
+│   │   └── SysML.png
+│   │
+│   ├── diagrammes.md        # Diagrammes (SysML, séquence, classe)
+│   └── documentation.md    # Documentation complète du projet
+│
 ├── .gitignore
-└── README.md               # Présentation du projet
+├── a_faire.md               # Liste des tâches restantes
+├── a_rendre.md              # Éléments à rendre
+├── code.py                  # Script principal (version finale)
+└── README.md                # Présentation du projet
+
 ````
 
 ---
