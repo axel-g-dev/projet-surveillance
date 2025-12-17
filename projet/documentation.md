@@ -1,3 +1,16 @@
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-Python-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![MySQL Connector](https://img.shields.io/badge/MySQL%20Connector-Python-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-MacBook-000000?style=for-the-badge&logo=apple&logoColor=white)
+
+
+
 # **Dossier de mini-projet**
 
 ## **Page de garde**
@@ -15,7 +28,7 @@
   - [**Page de garde**](#page-de-garde)
   - [Sommaire](#sommaire)
 - [**1. Notice d'utilisation**](#1-notice-dutilisation)
-  - [**1.1. Objectif du produit ou de l'application**](#11-objectif-du-produit-ou-de-lapplication)
+  - [**1.1. Objectif du projet**](#11-objectif-du-projet)
   - [**1.2. Prérequis**](#12-prérequis)
   - [**1.3. Procédure d'utilisation**](#13-procédure-dutilisation)
     - [**Étape 1 : Montage du dossier partagé**](#étape-1--montage-du-dossier-partagé)
@@ -110,7 +123,7 @@
 
 # **1. Notice d'utilisation**
 
-## **1.1. Objectif du produit ou de l'application**
+## **1.1. Objectif du projet**
 
 Système de vidéosurveillance temps réel pour PC portable intégré dans une architecture de surveillance distribuée. Le système capture automatiquement des images lors de détections de mouvement et synchronise les données avec un serveur Raspberry Pi 5 centralisé.
 
