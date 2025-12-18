@@ -22,10 +22,15 @@
 * **Enseignant référent :** M. Boudjelaba
 
 ---
+
+### Résumé Exécutif du projet 
+Ce projet s'inscrit dans le cadre du développement d'un système global de contrôle d'accès et de gestion intelligente pour la salle 215 du lycée. Il se concentre spécifiquement sur la conception d'un module de vidéosurveillance automatisé utilisant Python et OpenCV. Le système analyse le flux vidéo en temps réel pour détecter les mouvements, capture les événements marquants et stocke les images sur un serveur Raspberry Pi centralisé, tout en indexant les chemins d'accès dans une base de données MySQL. L'ensemble est supervisé via une interface web Streamlit, offrant une solution de surveillance efficace, économe en stockage et évolutive.
+
 ## Sommaire
 
 - [**Dossier de mini-projet**](#dossier-de-mini-projet)
   - [**Page de garde**](#page-de-garde)
+    - [Résumé Exécutif du projet](#résumé-exécutif-du-projet)
   - [Sommaire](#sommaire)
 - [**1. Notice d'utilisation**](#1-notice-dutilisation)
   - [**1.1. Objectif du projet**](#11-objectif-du-projet)
