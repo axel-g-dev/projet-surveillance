@@ -99,7 +99,7 @@
   - [**3.4. Réalisation**](#34-réalisation)
     - [**a) Description du travail effectué**](#a-description-du-travail-effectué)
     - [**b) Schéma réseau**](#b-schéma-réseau)
-    - [**b) Schéma de base de données**](#b-schéma-de-base-de-données)
+    - [**c) Schéma de base de données**](#c-schéma-de-base-de-données)
     - [**d) Compléments base de données**](#d-compléments-base-de-données)
   - [**3.5. Développement \& Tests**](#35-développement--tests)
     - [**a) Code développé (extraits pertinents)**](#a-code-développé-extraits-pertinents)
@@ -933,7 +933,7 @@ flowchart LR
     Folder --> Mount
     SMB --> Auth
 ```
-### **b) Schéma de base de données**
+### **c) Schéma de base de données**
 
 ```mermaid
 erDiagram
