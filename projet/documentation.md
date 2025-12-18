@@ -859,6 +859,11 @@ Le projet a été réalisé en plusieurs étapes successives :
 - Méthode `insert()` : Insertion paramétrée pour éviter l'injection SQL
 - Méthode `close()` : Fermeture propre de la connexion
 
+Voici la base de données :
+
+**Enregistrement des métadonnées des photos prises par le système de surveillance dans la base de données :***
+> ![Capture d'écran de la Base de donnée](images/bdd.png)
+
 **4. Développement de la classe SurveillanceManager :**
 - Initialisation de la caméra avec buffer double frame (frame_a, frame_b)
 - Algorithme de détection : différence absolue, seuillage à 30, & extraction de contours
