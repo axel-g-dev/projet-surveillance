@@ -246,6 +246,7 @@ Une interface web de gestion est déployée sur le serveur pour permettre la con
 URL d'accès : `http://192.168.4.1:8080/index.php?route=/sql&pos=0&db=presence&table=enregistrement`
 
 Base de données : `presence`
+Mot de passe : `*9RSSFr5bD0WO64qurDY`
 
 **Enregistrement des métadonnées des photos prises par le système de surveillance dans la base de données :***
 > ![Capture d'écran de la Base de donnée](images/bdd.png)
