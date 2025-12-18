@@ -40,20 +40,15 @@ Projet réalisé dans le cadre du Mini-Projet CIEL2 – Année scolaire 2025–2
 ## Structure du projet
 
 ```txt
-SURVEILLANCE_CAMERA/
+URVEILLANCE_CAMERA/
 ├── __pycache__/
 │   └── code.cpython-313.pyc
-│
-├── .venv/                  # Environnement virtuel Python
-├── venv/                   # (ancien environnement, non utilisé)
 │
 ├── bdd_sql/
 │   └── bdd.sql              # Script SQL de création de la base
 │
-├── env/                     # Variables d’environnement (si utilisées)
 │
 ├── prog_de_test/            # Scripts de tests et prototypes
-│   ├── older_codes/         # Anciennes versions / essais
 │   ├── code_photo.py        # Capture automatique de photos
 │   ├── code_sans_bdd.py     # Version Streamlit sans base de données
 │   ├── page_web.py          # Prototype interface web Streamlit
@@ -72,6 +67,7 @@ SURVEILLANCE_CAMERA/
 │   │   ├── bdd.png
 │   │   ├── detection_page_web.png
 │   │   ├── dossier_recordings_partage.png
+│   │   ├── gantt.png
 │   │   ├── page_web.png
 │   │   ├── smb.png
 │   │   └── SysML.png
@@ -80,11 +76,8 @@ SURVEILLANCE_CAMERA/
 │   └── documentation.md    # Documentation complète du projet
 │
 ├── .gitignore
-├── a_faire.md               # Liste des tâches restantes
-├── a_rendre.md              # Éléments à rendre
 ├── code.py                  # Script principal (version finale)
 └── README.md                # Présentation du projet
-
 ````
 
 ---

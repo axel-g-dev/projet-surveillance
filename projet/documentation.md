@@ -799,7 +799,7 @@ classDiagram
 
 ### **d) Diagramme de Gantt**
 
-*(À insérer : planning montrant les phases du projet : Installation environnement, Développement détection, Intégration base de données, Tests, Documentation)*
+![Gantt de notre projet](images/gantt.png)
 
 ### **d) Planning des séances**
 
@@ -1127,7 +1127,6 @@ Les paramètres de détection (THRESHOLD_VALUE = 30, MIN_AREA = 1000) offrent un
 
 ## **Annexe A : Structure du projet**
 
-```
 ```txt
 SURVEILLANCE_CAMERA/
 ├── __pycache__/
