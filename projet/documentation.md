@@ -1,3 +1,6 @@
+# **Dossier de mini-projet**
+
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Python-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
@@ -9,9 +12,6 @@
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-MacBook-000000?style=for-the-badge&logo=apple&logoColor=white)
 
-
-
-# **Dossier de mini-projet**
 
 ## **Page de garde**
 
@@ -800,26 +800,33 @@ classDiagram
 
 ### **d) Planning des séances**
 
-| Séance | Travail réalisé |
-| ------ | --------------- |
-| 1      | Installation de l'environnement Python, configuration du dossier partagé, tests de connexion MySQL |
-| 2      | Développement de la classe DatabaseManager, création de la table enregistrement, tests d'insertion |
-| 3      | Développement de la classe SurveillanceManager, implémentation de l'acquisition caméra |
-| 4      | Implémentation de l'algorithme de détection de mouvement (preprocessing, détection, filtrage) |
-| 5      | Optimisation des paramètres de sensibilité (THRESHOLD_VALUE, MIN_AREA, BLUR_KERNEL) |
-| 6      | Développement de l'interface Streamlit, intégration des statistiques temps réel |
-| 7      | Tests unitaires et tests d'intégration, validation des fiches de recette |
-| 8      | Rédaction de la documentation, finalisation du rapport |
+| Séance | Date                      | Horaires      | Travaux réalisés                                                                                                                                                                                                                                                                                                                              |
+| :----: | :------------------------ | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    1   | Jeudi 27 novembre 2025    | 11h30 – 13h   | Installation de l’environnement de développement Python et des bibliothèques nécessaires (OpenCV). Tests de connexion à la caméra intégrée sur macOS. Développement et exécution d’un premier script de surveillance permettant d’afficher le flux vidéo, de contrôler l’état Start / Pause et de valider une détection de mouvement basique. |
+|    2   | Vendredi 28 novembre 2025 | 12h00 – 13h00 | Développement d’un script de surveillance continue avec capture automatique de photos lors d’un mouvement. Mise en place de la création automatique du dossier de sauvegarde et tests de fonctionnement intensifs. Identification d’une anomalie critique liée à l’écrasement des fichiers images.                                            |
+|    3   | Mardi 2 décembre 2025     | 15h30 – 17h30 | Structuration progressive du projet et premiers tests d’une interface web avec Streamlit. Analyse du fonctionnement de Streamlit et de son cycle d’exécution. Tests des boutons de contrôle et mise en évidence des limites d’une boucle infinie classique dans une application web.                                                          |
+|    4   | Jeudi 4 décembre 2025     | 10h00 – 12h00 | Implémentation complète de l’algorithme de détection de mouvement : prétraitement des images, seuillage, détection de contours et filtrage par surface minimale. Affichage graphique des zones détectées en temps réel sur le flux vidéo.                                                                                                     |
+|    5   | Vendredi 5 décembre 2025  | 12h00 – 13h00 | Optimisation des paramètres de détection (sensibilité, surface minimale, flou). Ajout d’une limitation temporelle des captures afin d’éviter la saturation du stockage. Intégration d’un affichage de statistiques en temps réel (détections et captures).                                                                                    |
+|    6   | Mardi 9 décembre 2025     | 13h30 – 17h30 | Développement de la version complète de l’application avec interface Streamlit. Connexion à une base de données MySQL, création de la table d’enregistrement et insertion des événements de détection. Réalisation de tests fonctionnels globaux sur l’ensemble de l’application.                                                             |
+|    7   | Jeudi 11 décembre 2025    | 16h00 – 17h25 | Réalisation des tests unitaires et des tests d’intégration sur la version finale. Vérification du bon fonctionnement de la détection, des captures, de l’interface et de l’enregistrement en base de données. Validation des fiches recette.                                                                                                  |
+|    8   | Vendredi 12 décembre 2025 | 12h00 – 13h00 | Rédaction de la documentation technique du projet. Finalisation des fiches recette, description des choix techniques et rédaction des bilans de test.                                                                                                                                                                                         |
+|    9   | Mardi 16 décembre 2025    | 16h10 – 17h25 | Relecture complète de la documentation et du rapport. Vérification de la cohérence entre le planning, les fiches recette et les fonctionnalités développées. Corrections mineures de forme et de contenu.                                                                                                                                     |
+|   10   | Jeudi 18 décembre 2025    | 10h00 – 11h30 | Exécution des tests finaux de validation. Vérification de la stabilité de la version finale, contrôle de l’ensemble des fonctionnalités et validation définitive du projet en vue du rendu.                                                                                                                                                   
 
 ### **e) Fiche de suivi du projet**
 
-| Tâche | Responsable | Avancement | Difficultés |
-| ----- | ----------- | ---------- | ----------- |
-| Installation caméra | L.D. | 100% | Choix de l'index caméra (iPhone vs webcam interne) |
-| Développement Python | A.G. | 100% | Optimisation des paramètres de détection pour réduire les faux positifs |
-| Base de données | L.D. | 100% | Gestion de la reconnexion MySQL en cas de perte réseau |
-| Documentation | L.D., A.G. | 100% | - |
-| Tests | L.D., A.G. | En cours | - |
+| Tâche                                               | Responsable(s) | Avancement | Difficultés rencontrées / solutions apportées                                                                                                                                                                   |
+| --------------------------------------------------- | -------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Installation et configuration de la caméra          | L.D., A.G.          | 100 %      | Choix de l’index caméra sous macOS (iPhone via Continuity Camera index 0 vs webcam interne index 1). Solution : tests comparatifs et sélection de l’index 1 pour une meilleure stabilité.                       |
+| Mise en place de l’environnement de développement   | L.D., A.G.     | 100 %      | Installation de Python 3.13.5, création de l’environnement virtuel et installation des bibliothèques. Aucun blocage majeur rencontré.                                                                           |
+| Développement de la détection de mouvement (OpenCV) | L.D., A.G.           | 100 %      | Faux positifs fréquents liés au bruit et à l’éclairage. Solution : ajustement des paramètres `THRESHOLD_VALUE`, `MIN_AREA` et ajout d’un flou gaussien.                                                         |
+| Capture et gestion des images                       | L.D., A.G.           | 100 %      | Écrasement des fichiers lors des captures multiples sur une même seconde. Solution : ajout d’une temporisation minimale entre deux captures (`MIN_TIME_BETWEEN_PHOTOS`).                                        |
+| Développement de l’interface Streamlit              | L.D., A.G.      | 100 %      | Problème de rafraîchissement du flux vidéo dû au fonctionnement interne de Streamlit. Solution : utilisation de `st.session_state` et de zones dynamiques (`st.empty()`).                                       |
+| Mise en place de la base de données MySQL           | L.D., A.G.         | 100 %      | Problèmes initiaux liés au nommage des variables et à la perte de connexion après inactivité. Solution : harmonisation des variables et vérification systématique de l’état de la connexion (`is_connected()`). |
+| Intégration OpenCV / Streamlit / Base de données    | L.D., A.G.     | 100 %      | Synchronisation entre capture d’image et insertion en base. Solution : centralisation de la logique dans les classes `SurveillanceManager` et `DatabaseManager`.                                                |
+| Tests unitaires et tests d’intégration              | L.D., A.G.     | 100 %      | Validation progressive via fiches recette. Aucune anomalie bloquante sur la version finale.                                                                                                                     |
+| Documentation technique et fiches recette           | L.D., A.G.     | 100 %      | Travail conséquent de rédaction et de structuration. Solution : rédaction itérative en parallèle des tests finaux.                                                                                              |
+| Tests finaux et validation du projet                | L.D., A.G.     | 100 %      | Vérification de la stabilité globale, du stockage et de l’enregistrement en base. Projet validé sans anomalies critiques.                                                                                       |
 
 ## **3.4. Réalisation**
 
