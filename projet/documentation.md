@@ -118,6 +118,7 @@
     - [**Détection via les carrés vert d'un mouvement et affichage sur la page Web :**](#détection-via-les-carrés-vert-dun-mouvement-et-affichage-sur-la-page-web-)
     - [**Capture d'écran du dossier 'recordings' partagé sur lequel le MacBook envoi les photos :**](#capture-décran-du-dossier-recordings-partagé-sur-lequel-le-macbook-envoi-les-photos-)
     - [**Enregistrement des métadonnées des photos prises par le système de surveillance dans la base de données :**\*](#enregistrement-des-métadonnées-des-photos-prises-par-le-système-de-surveillance-dans-la-base-de-données-)
+    - [**Capture de l'écran du Terminal de l'arrêt du programme depuis le bouton de la page Web :**](#capture-de-lécran-du-terminal-de-larrêt-du-programme-depuis-le-bouton-de-la-page-web-)
 
 ---
 
@@ -270,6 +271,10 @@ L'interface s'ouvre automatiquement dans le navigateur à l'adresse `http://loca
 
 **Via interface :**
 - Clic sur "Arrêter" dans la sidebar
+
+**Capture de l'écran du Terminal de l'arrêt du programme depuis le bouton de la page Web :** 
+> ![Capture de l'écran de l'arrêt du programme](images/arret.png)
+
 
 **Puis dans le terminal :**
 - `Ctrl+C` 
@@ -1179,8 +1184,7 @@ SURVEILLANCE_CAMERA/
 ├── .gitignore
 ├── code.py                  # Script principal (version finale)
 └── README.md                # Présentation du projet
-
-````
+```
 
 ## **Annexe B : Configuration système**
 
@@ -1244,3 +1248,6 @@ mvt_20251213-152318.jpg
 
 ### **Enregistrement des métadonnées des photos prises par le système de surveillance dans la base de données :***
 > ![Capture d'écran de la Base de donnée](images/bdd.png)
+
+### **Capture de l'écran du Terminal de l'arrêt du programme depuis le bouton de la page Web :** 
+> ![Capture de l'écran de l'arrêt du programme](images/arret.png)
