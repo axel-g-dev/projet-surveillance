@@ -239,6 +239,16 @@ mysql -h 192.168.4.1 -u presence -p
 USE presence;
 SELECT * FROM enregistrement ORDER BY id_log DESC LIMIT 5;
 ```
+**Interface d'administration (phpMyAdmin)**
+
+Une interface web de gestion est déployée sur le serveur pour permettre la consultation des logs, la maintenance de la table et la vérification des insertions en temps réel sans ligne de commande.
+
+URL d'accès : `http://192.168.4.1:8080/index.php?route=/sql&pos=0&db=presence&table=enregistrement`
+
+Base de données : `presence`
+
+**Enregistrement des métadonnées des photos prises par le système de surveillance dans la base de données :***
+> ![Capture d'écran de la Base de donnée](images/bdd.png)
 
 ### **Étape 4 : Démarrage du système**
 
