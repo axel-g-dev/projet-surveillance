@@ -1125,15 +1125,17 @@ def save_picture(self, frame):
 
 **Bilan du projet :**
 
-Le système de vidéosurveillance développé répond aux objectifs fixés dans le cahier des charges. L'architecture distribuée avec un MacBook Pro comme client de surveillance et un Raspberry Pi 5 comme serveur centralisé permet une séparation claire des responsabilités et une scalabilité future.
+Le système de vidéosurveillance implémenté satisfait aux exigences fonctionnelles définies pour la sécurisation de la **salle 215**. Le module assure la chaîne complète de traitement attendue : détection d'intrusion, horodatage des événements et archivage sur serveur distant.
 
-Les choix techniques se sont révélés pertinents :
-- OpenCV offre des performances optimales pour la détection temps réel
-- Streamlit permet un monitoring simple et efficace
-- La base MySQL centralisée facilite la gestion des logs
-- Le stockage sur dossier partagé évite la surcharge du réseau
+L'architecture distribuée mise en œuvre (Client d'acquisition / Serveur de stockage) valide la robustesse de la solution. La dissociation entre le traitement analytique (Python) et la persistance des données (MySQL) assure la stabilité du service et facilite sa maintenance.
 
-Les paramètres de détection (THRESHOLD_VALUE = 30, MIN_AREA = 1000) offrent un bon équilibre entre sensibilité et faux positifs pour un environnement intérieur contrôlé.
+Les choix techniques et architecturaux sont validés par les points suivants :
+
+* **Optimisation des données :** L'enregistrement exclusif des chemins d'accès (URI) en base de données, plutôt que des fichiers binaires, garantit la performance des requêtes SQL et la scalabilité du stockage.
+* **Fiabilité de la détection :** L'utilisation d'OpenCV permet un traitement d'image en temps réel, avec un calibrage spécifique (Seuil 30) filtrant efficacement le bruit numérique.
+* **Supervision simplifiée :** L'interface Streamlit fournit une console d'administration légère, permettant le pilotage du système sans prérequis techniques complexes.
+
+<br>
 
 **Perspectives d'amélioration :**
 
