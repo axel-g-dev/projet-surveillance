@@ -247,6 +247,11 @@ streamlit run code.py
 
 L'interface s'ouvre automatiquement dans le navigateur à l'adresse `http://localhost:8501`
 
+**Présentation de la page web sans avoir lancé la vidéo surveillance :** 
+> ![Page Web sans surveillance](images/page_web.png)
+
+
+
 ### **Étape 5 : Utilisation de l'interface**
 
 **Barre latérale :**
@@ -254,6 +259,9 @@ L'interface s'ouvre automatiquement dans le navigateur à l'adresse `http://loca
 - Les statistiques s'affichent en temps réel (Détections, Captures, Durée)
 - Cliquer sur "Arrêter" pour stopper la surveillance
 - Cliquer sur "Ouvrir dossier" pour accéder aux captures
+
+**Détection via les carrés vert d'un mouvement et affichage sur la page Web :** 
+> ![Détection d'un mouvement](images/detection_page_web.png)
 
 **Zone principale :**
 - Flux vidéo en direct avec rectangles verts sur zones en mouvement 

@@ -40,7 +40,7 @@ Projet réalisé dans le cadre du Mini-Projet CIEL2 – Année scolaire 2025–2
 ## Structure du projet
 
 ```txt
-URVEILLANCE_CAMERA/
+SURVEILLANCE_CAMERA/
 ├── __pycache__/
 │   └── code.cpython-313.pyc
 │
