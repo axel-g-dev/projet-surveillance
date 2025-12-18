@@ -199,6 +199,9 @@ pip install streamlit opencv-python numpy mysql-connector-python
 5. Mot de passe : `fi27^#COi5mlK##ZB3T4`
 6. Le dossier apparaît dans `/Volumes/recordings`
 
+**La connexion au serveur :**
+> ![Connexion au serveur](images/smb.png)
+
 **Via terminal :**
 ```bash
 mkdir -p /Volumes/recordings
@@ -1125,13 +1128,47 @@ Les paramètres de détection (THRESHOLD_VALUE = 30, MIN_AREA = 1000) offrent un
 ## **Annexe A : Structure du projet**
 
 ```
-surveillance_camera/
-├── code.py                 # Script principal
-├── venv/                   # Environnement virtuel
-├── README.md               # Documentation
-└── /Volumes/recordings/    # Dossier partagé (montage SMB)
-    └── mvt_*.jpg     # Images capturées
-```
+```txt
+SURVEILLANCE_CAMERA/
+├── __pycache__/
+│   └── code.cpython-313.pyc
+│
+├── bdd_sql/
+│   └── bdd.sql              # Script SQL de création de la base
+│
+│
+├── prog_de_test/            # Scripts de tests et prototypes
+│   ├── code_photo.py        # Capture automatique de photos
+│   ├── code_sans_bdd.py     # Version Streamlit sans base de données
+│   ├── page_web.py          # Prototype interface web Streamlit
+│   └── test_camera.py       # Test basique de la caméra
+│
+├── projet/                  # Documentation du mini-projet
+│   ├── fiches_recette/      # Fiches de tests et validations
+│   │   ├── fiche_recette_1.md
+│   │   ├── fiche_recette_2.md
+│   │   ├── fiche_recette_3.md
+│   │   ├── fiche_recette_4.md
+│   │   ├── fiche_recette_5.md
+│   │   └── fiche_recette_modele.md
+│   │
+│   ├── images/              # Schémas et captures d’écran
+│   │   ├── bdd.png
+│   │   ├── detection_page_web.png
+│   │   ├── dossier_recordings_partage.png
+│   │   ├── gantt.png
+│   │   ├── page_web.png
+│   │   ├── smb.png
+│   │   └── SysML.png
+│   │
+│   ├── diagrammes.md        # Diagrammes (SysML, séquence, classe)
+│   └── documentation.md    # Documentation complète du projet
+│
+├── .gitignore
+├── code.py                  # Script principal (version finale)
+└── README.md                # Présentation du projet
+
+````
 
 ## **Annexe B : Configuration système**
 
