@@ -94,8 +94,8 @@
     - [**b) Diagramme de séquence (SysML)**](#b-diagramme-de-séquence-sysml)
     - [**c) Diagramme de Classe**](#c-diagramme-de-classe)
     - [**d) Diagramme de Gantt**](#d-diagramme-de-gantt)
-    - [**d) Planning des séances**](#d-planning-des-séances)
-    - [**e) Fiche de suivi du projet**](#e-fiche-de-suivi-du-projet)
+    - [**e) Planning des séances**](#e-planning-des-séances)
+    - [**f) Fiche de suivi du projet**](#f-fiche-de-suivi-du-projet)
   - [**3.4. Réalisation**](#34-réalisation)
     - [**a) Description du travail effectué**](#a-description-du-travail-effectué)
     - [**b) Schéma réseau**](#b-schéma-réseau)
@@ -825,7 +825,7 @@ classDiagram
 
 ![Gantt de notre projet](images/gantt.png)
 
-### **d) Planning des séances**
+### **e) Planning des séances**
 
 | Séance | Date                      | Horaires      | Travaux réalisés                                                                                                                                                                                                                                                                                                                              |
 | :----: | :------------------------ | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -840,7 +840,7 @@ classDiagram
 |    9   | Mardi 16 décembre 2025    | 16h10 – 17h25 | Relecture complète de la documentation et du rapport. Vérification de la cohérence entre le planning, les fiches recette et les fonctionnalités développées. Corrections mineures de forme et de contenu.                                                                                                                                     |
 |   10   | Jeudi 18 décembre 2025    | 10h00 – 11h30 | Exécution des tests finaux de validation. Vérification de la stabilité de la version finale, contrôle de l’ensemble des fonctionnalités et validation définitive du projet en vue du rendu.                                                                                                                                                   
 
-### **e) Fiche de suivi du projet**
+### **f) Fiche de suivi du projet**
 
 | Tâche                                               | Responsable(s) | Avancement | Difficultés rencontrées / solutions apportées                                                                                                                                                                   |
 | --------------------------------------------------- | -------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
