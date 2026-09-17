@@ -133,14 +133,6 @@ La documentation complète du projet est disponible dans le dossier `projet/` :
 
 ---
 
-## Auteurs
-
-* Louna D.
-* Axel G.
-
-Classe CIEL2 – Année scolaire 2025–2026
-Enseignant référent : M. Boudjelaba
-
 ## État du projet
 
 Version finale fonctionnelle et validée (v5.0)
